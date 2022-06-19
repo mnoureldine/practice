@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome to Online Store</h1>
+    <h2>Products</h2>
+    {% for p in products %}
+        <li>
+            <a href="/product/{{p.id}}">{{p.name}}</a>
+        </li>
+    {% endfor %}
+</body>
+</html>
